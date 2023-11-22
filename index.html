@@ -35,6 +35,13 @@
                             <input type="search" placeholder="Nhập từ khóa tìm kiếm...">
                             <button><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
+                        <div class="search_dropdown">
+                            <ul>
+                                <li><a href="">Ghe luxury moi nhat</a></li>
+                                <li><a href="">Ban</a></li>
+                                <li><a href="">Ke</a></li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
                 <div class="account ">
@@ -44,8 +51,8 @@
                     <a class="text_sign-in hover" href="./login.html">
                         <span>Đăng nhập</span>
                     </a>
-                    <span class="cart"><a href="./cart.html"><i class="fa fa-cart-plus"
-                                aria-hidden="true"></i></a></span>
+                    <span class="cart"><a href="./cart.html"><span class="cart-num">1</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></span>
                 </div>
             </div>
         </header>
@@ -57,15 +64,47 @@
                 <div class="desk">
                     <div class="category-menu">
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                DANH MỤC SẢN PHẨM</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ sách</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang trí</a>
-                            </div>
+                            <ul class="nested-dropdowns">
+                                <li>
+                                    <div class="cate-text">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                        DANH MỤC SẢN PHẨM
+                                    </div>
+                                    <ul class="dropdownCategory">
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">Sofa</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">Sofa sofa</a></li>
+                                                <li><a href="">Sofa sofa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">tủ đồ</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">tur đồ</a></li>
+                                                <li><a href="">tur đồ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">kệ sách</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">sách ne</a></li>
+                                                <li><a href="">sách ne</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -74,25 +113,16 @@
                             <li><a class="active-menu" href="index.html">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     TRANG CHỦ</a></li>
-                            <li>
-                                <div class="dropdown-navbar">
-                                    <a href="./product.html" class="dropa-navbar">
-                                        <i class="fa-solid fa-couch"></i>
-                                        SẢN PHẨM <i class="fas fa-chevron-down responesiveNone"></i></a>
-
-                                    <div class="dropdown-content-navbar ">
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ
-                                            sách</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang
-                                            trí</a>
-                                    </div>
-                                </div>
+                            <li><a href="./product.html" class="dropa-navbar">
+                                    <i class="fa-solid fa-couch"></i>
+                                    SẢN PHẨM </a>
                             </li>
                             <li><a href="./news.html">
                                     <i class="fas fa-newspaper"></i>
                                     TIN TỨC</a></li>
+                            <li><a href="./policy.html">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    BẢO HÀNH</a></li>
                             <li><a href="./about.html">
                                     <i class="fa-solid fa-users-rectangle"></i>
                                     GIỚI THIỆU</a></li>
@@ -122,16 +152,51 @@
                 <div class="menu-responsive">
 
                     <div class="category-menu">
-                        <div class="dropdown-responsive">
-                            <button onclick="category_responsive()" class="dropbtn-responsive">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                DANH MỤC SẢN PHẨM</button>
-                            <div id="myDropdown-responsive" class="dropdown-content-responsive">
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ sách</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang trí</a>
-                            </div>
+                        <div class="dropdown">
+                            <ul class="nested-dropdowns">
+                                <li>
+                                    <div class="cate-text disibleHover">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                        DANH MỤC SẢN PHẨM
+                                    </div>
+                                    <ul class="dropdownCategory">
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">Sofa</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">Sofa sofa grel aeojr</a></li>
+                                                <li><a href="">Sofa sofa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">tủ đồ</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">tur đồ</a></li>
+                                                <li><a href="">tur đồ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">kệ sách</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">sách ne</a></li>
+                                                <li><a href="">sách ne</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         <label for="toggle-responsive" class="close" id="">
                             <i class="fa fa-times" aria-hidden="true"></i>
@@ -431,6 +496,210 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="image-box">
+                                    <div class="image">
+                                        <img src="./images/product-image (5).jpg" alt>
+                                    </div>
+                                    <div class="overlay-btn">
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href>
+                                            <button class="btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <a href="">
+                                        <h2 class="item">Đồng hồ Luxury</h2>
+                                    </a>
+                                    <a href="">
+                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
+                                            èlgkrsg
+                                            egsnrlsgnk
+                                            ènkl
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
+                                    </a>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -442,271 +711,37 @@
                     <div class="container_category-image">
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""><img src="./images/books.png" alt="kệ sách"></a>
+                                <img src="./images/bookshelf.jpg" alt="kệ sách">
                             </div>
-                            <a href="">
-                                Kệ sách
-                            </a>
                         </div>
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""><img src="./images/sofa.png" alt="sofa"></a>
+                                <img src="./images/sofa.jpg" alt="sofa">
                             </div>
-                            <a href="">Sofa</a>
                         </div>
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""> <img src="./images/table.png" alt="bàn"></a>
+                                <img src="./images/table.jpg" alt="bàn">
                             </div>
-                            <a href="">Bàn</a>
                         </div>
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""><img src="./images/umbrella.png" alt="tang trí"></a>
+                                <img src="./images/trangtris.jpg" alt="trang trí">
                             </div>
-                            <a href="">Trang trí</a>
                         </div>
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""><img src="./images/closet.png" alt="Tủ quần áo"></a>
+                                <img src="./images/treodo.jpg" alt="Tủ quần áo"></a>
                             </div>
-                            <a href="">Tủ quần áo</a>
                         </div>
                         <div class="box-category-image">
                             <div class="image">
-                                <a href=""><img src="./images/chair.png" alt="Ghế ngồi"></a>
+                                <img src="./images/chair.jpg" alt="Ghế ngồi">
                             </div>
-                            <a href="">Ghế</a>
                         </div>
                     </div>
                 </section>
                 <!-- End category image box -->
-
-                <!-- Advertise -->
-                <section class="advertise">
-                    <div class="container-advertise animation-advertise">
-                        <img src="./images/quangcao.jpg" alt>
-                    </div>
-                </section>
-                <!-- end advertise -->
-
-                <!-- Product top -->
-                <section class="product-hot">
-                    <div class="container_product-hot">
-                        <div class="product-hot-title">
-                            <h3>TOP SẢN PHẨM NỔI BẬT 🎇</h3>
-                        </div>
-                        <div class="product-hot-listing">
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-4.jpg" alt="product-hot">
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-3.jpg" alt>
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-4.jpg" alt>
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-2.jpg" alt>
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-3.jpg" alt>
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="image-box">
-                                    <div class="image">
-                                        <img src="./images/product-image-3.jpg" alt>
-                                    </div>
-                                    <div class="overlay-btn">
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                        <a href>
-                                            <button class="btn">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="text-box">
-                                    <a href="">
-                                        <h2 class="item">Đồng hồ Luxury</h2>
-                                    </a>
-                                    <a href="">
-                                        <p class="descrip">Được sự ưa chuộng của nhiều hộ gia đình
-                                            èlgkrsg
-                                            egsnrlsgnk
-                                            ènkl
-                                        </p>
-                                    </a>
-                                    <a href="">
-                                        <h3 class="price-prd">2.500.000<span>₫</span></h3>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <!-- end product top -->
-
                 <!-- Tin tức -->
                 <section class="news">
                     <div class="container-news">
@@ -807,6 +842,45 @@
                 </section>
                 <!-- End tin tức -->
 
+                <!-- link image -->
+                <div class="image_link">
+                    <div class="link_policy">
+                        <a href="./policy.html"><img src="./images/baohanh1.png" alt="link đến bảo hành"></a>
+                        <div><a href="./policy.html" class="link_policy">Các chính sách bảo hành tại đây!...</a></div>
+                    </div>
+
+                    <div class="link_product">
+                        <a href="./product.html"><img src="./images/effect.png" alt="link product"></a>
+                        <div><a href="./product.html" class="link_allprd">Tất cả sản phẩm tại đây!...</a></div>
+                    </div>
+                </div>
+                <!-- link image -->
+                <section class="team">
+                    <h2 class="section-heading">TSIX TEAM</h2>
+                    <div class="container">
+                        <div class="profile">
+                            <img src="./images/phuhuy.jpg" alt="" /><span class="name">Phú Huy</span>
+                        </div>
+
+                        <div class="profile">
+                            <img src="./images/thai.jpg" alt="" /><span class="name">Long Thái</span>
+                        </div>
+                        <div class="profile">
+                            <img src="./images/lam.jpg" alt="" /><span class="name">Thành Lam</span>
+                        </div>
+                        <div class="profile">
+                            <img src="./images/dat.jpg" alt="" /><span class="name">Trọng Đạt</span>
+                        </div>
+                        <div class="profile">
+                            <img src="./images/quan.jpg" alt="" /><span class="name">Văn Quân</span>
+                        </div>
+                        <div class="profile">
+                            <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                                alt="" /><span class="name">Major Sameer</span>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
 
@@ -826,7 +900,7 @@
                     </div>
 
                     <div class="subscribe-form box-form">
-                        <form action>
+                        <form action="./contact.html">
                             <input type="email" placeholder="Nhập gmail của bạn tại đây" required minlength="15">
                             <button class>Subscribe</button>
                         </form>
@@ -896,6 +970,8 @@
     <script src="./js/category-show_responsive.js"></script>
     <script src="./js/slideshow.js"></script>
     <script src="./js/back-to-top.js"></script>
+    <script src="./js/dropdown.js"></script>
+
 
     <!--  -->
     <!-- Messenger Plugin chat Code -->

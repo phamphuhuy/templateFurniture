@@ -18,30 +18,34 @@
     <div class="wrapperAccount">
         <div class="containerAccount">
             <div class="formEnter">
+                <div class="responsiveLogo">
+                    <a href="./index.html"><img src="./images/logo-web.png" alt="logo website"></a>
+                </div>
                 <div class="containerForm">
                     <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-                    <form action="">
+                    <form action="" name="registerForm" onsubmit="return validateRegisterForm()">
                         <div class="form-control">
-                            <input id="username" type="text" placeholder="Họ và tên">
+                            <input id="username" nam="username" type="text" placeholder="Họ và tên">
                             <span></span>
-                            <small class="error"></small>
+                            <small class="error" id="usernameError"></small>
                         </div>
                         <div class="form-control">
-                            <input id="email" type="email" placeholder="Email">
+                            <input id="email" name="email" type="email" placeholder="Email">
                             <span></span>
-                            <small class="error"></small>
+                            <small class="error" id="emailError"></small>
                         </div>
                         <div class="form-control">
-                            <input id="password" type="password" placeholder="Mật khẩu">
+                            <input id="password" name="password" type="password" placeholder="Mật khẩu">
                             <span></span>
                             <i id="showPassword" class="fa fa-eye" aria-hidden="true"></i>
-                            <small class="error"></small>
+                            <small class="error" id="passwordError"></small>
                         </div>
                         <div class="form-control">
-                            <input id="confirmPassword" type="password" placeholder="Nhập lại mật khẩu">
+                            <input id="confirmPassword" name="confirmPassword" type="password"
+                                placeholder="Nhập lại mật khẩu">
                             <span></span>
                             <i id="showConfirmPassword" class="fa fa-eye" aria-hidden="true"></i>
-                            <small class="error"></small>
+                            <small class="error" id="confirmPasswordError"></small>
                         </div>
 
                         <button type="submit" class="btnSubmit">Đăng ký</button>

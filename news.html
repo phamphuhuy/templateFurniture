@@ -27,7 +27,6 @@
     <!-- Start Furniture App -->
     <div class="app-furniture">
 
-        <!-- header -->
         <header class="header">
             <div class="container-header">
                 <div class="logo-header">
@@ -39,6 +38,13 @@
                             <input type="search" placeholder="Nhập từ khóa tìm kiếm...">
                             <button><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
+                        <div class="search_dropdown">
+                            <ul>
+                                <li><a href="">Ghe luxury moi nhat</a></li>
+                                <li><a href="">Ban</a></li>
+                                <li><a href="">Ke</a></li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
                 <div class="account ">
@@ -48,13 +54,12 @@
                     <a class="text_sign-in hover" href="./login.html">
                         <span>Đăng nhập</span>
                     </a>
-                    <span class="cart"><a href="./cart.html"><i class="fa fa-cart-plus"
-                                aria-hidden="true"></i></a></span>
+                    <span class="cart"><a href="./cart.html"><span class="cart-num">1</span><i
+                                class="fa-solid fa-cart-shopping"></i></a></span>
                 </div>
             </div>
         </header>
         <!-- end header -->
-
         <!-- menu -->
         <nav class="menu">
             <div class="container-menu">
@@ -62,42 +67,65 @@
                 <div class="desk">
                     <div class="category-menu">
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                DANH MỤC SẢN PHẨM</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ sách</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang trí</a>
-                            </div>
+                            <ul class="nested-dropdowns">
+                                <li>
+                                    <div class="cate-text">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                        DANH MỤC SẢN PHẨM
+                                    </div>
+                                    <ul class="dropdownCategory">
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">Sofa</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">Sofa sofa</a></li>
+                                                <li><a href="">Sofa sofa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">tủ đồ</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">tur đồ</a></li>
+                                                <li><a href="">tur đồ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                                <a href="">kệ sách</a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">sách ne</a></li>
+                                                <li><a href="">sách ne</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="menu-list">
                         <ui class="main-menu">
-                            <li><a class="active-menu" href="./index.html">
+                            <li><a class="active-menu" href="index.html">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     TRANG CHỦ</a></li>
-                            <li>
-                                <div class="dropdown-navbar">
-                                    <a href="./product.html" class="dropa-navbar">
-                                        <i class="fa-solid fa-couch"></i>
-                                        SẢN PHẨM <i class="fas fa-chevron-down responesiveNone"></i></a>
-
-                                    <div class="dropdown-content-navbar ">
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ
-                                            sách</a>
-                                        <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang
-                                            trí</a>
-                                    </div>
-                                </div>
+                            <li><a href="./product.html" class="dropa-navbar">
+                                    <i class="fa-solid fa-couch"></i>
+                                    SẢN PHẨM </a>
                             </li>
                             <li><a href="./news.html">
                                     <i class="fas fa-newspaper"></i>
                                     TIN TỨC</a></li>
+                            <li><a href="./policy.html">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    BẢO HÀNH</a></li>
                             <li><a href="./about.html">
                                     <i class="fa-solid fa-users-rectangle"></i>
                                     GIỚI THIỆU</a></li>
@@ -127,16 +155,51 @@
                 <div class="menu-responsive">
 
                     <div class="category-menu">
-                        <div class="dropdown-responsive">
-                            <button onclick="category_responsive()" class="dropbtn-responsive">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                DANH MỤC SẢN PHẨM</button>
-                            <div id="myDropdown-responsive" class="dropdown-content-responsive">
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Sofa</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Ghế</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Kệ sách</a>
-                                <a href="#"><i class="fa-solid fa-chevron-right"></i> Trang trí</a>
-                            </div>
+                        <div class="dropdown">
+                            <ul class="nested-dropdowns">
+                                <li>
+                                    <div class="cate-text disibleHover">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                        DANH MỤC SẢN PHẨM
+                                    </div>
+                                    <ul class="dropdownCategory">
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">Sofa</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">Sofa sofa grel aeojr</a></li>
+                                                <li><a href="">Sofa sofa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">tủ đồ</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">tur đồ</a></li>
+                                                <li><a href="">tur đồ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="nested-dropdowns__item">
+                                                <i class="fa-solid fa-chevron-circle-right"></i>
+                                                <a href="">kệ sách</a>
+                                                <i class="fa-solid fa-chevron-down down"></i>
+                                            </div>
+                                            <ul>
+                                                <li><a href="">sách ne</a></li>
+                                                <li><a href="">sách ne</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         <label for="toggle-responsive" class="close" id="">
                             <i class="fa fa-times" aria-hidden="true"></i>
@@ -145,16 +208,16 @@
 
                     <div class="menu-list-responsive">
                         <ul class="main-menu-responsive">
-                            <li><i class="fa fa-home" aria-hidden="true"></i><a class="active-menu" href="./index.html">
+                            <li><i class="fa fa-home" aria-hidden="true"></i><a class="active-menu" href="index.html">
                                     TRANG CHỦ</a></li>
-                            <li><i class="fa-solid fa-couch"></i><a href="./product.html" class="dropa-navbar">
+                            <li><i class="fa-solid fa-couch"></i><a href="product.html" class="dropa-navbar">
                                     SẢN PHẨM </a>
                             </li>
-                            <li><i class="fas fa-newspaper"></i><a href="./news.html">
+                            <li><i class="fas fa-newspaper"></i><a href="news.html">
                                     TIN TỨC</a></li>
-                            <li><i class="fa-solid fa-users-rectangle"></i><a href="./about.html">
+                            <li><i class="fa-solid fa-users-rectangle"></i><a href="about.html">
                                     GIỚI THIỆU</a></li>
-                            <li><i class="fa fa-phone-square" aria-hidden="true"></i><a href="./contact.html">
+                            <li><i class="fa fa-phone-square" aria-hidden="true"></i><a href="contact.html">
                                     LIÊN HỆ</a></li>
                         </ul>
                     </div>
@@ -167,7 +230,6 @@
 
             </div>
         </nav>
-        <!-- end menu -->
 
         <!-- slide -->
         <section class="slideshow">

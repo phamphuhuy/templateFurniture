@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #imageContainer {
+            position: relative;
+            width: 300px;
+            /* Độ rộng của ảnh */
+            height: 200px;
+            /* Chiều cao của ảnh */
+            overflow: hidden;
+        }
+
+        #image {
+            width: 100%;
+            height: auto;
+            transition: filter 0.5s ease-in-out;
+        }
+
+        #imageContainer:hover #image::before {
+            left: 100%;
+        }
+
+        #image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            /* Bắt đầu nằm ngoài khung hình */
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 252, 252, 0.5), rgba(255, 255, 255, 1));
+            transition: left 0.2s ease;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="imageContainer">
+        <img id="image" src="../images/categoryg" alt="Image with Hover Effect">
+    </div>
+
+</body>
+
+</html>
