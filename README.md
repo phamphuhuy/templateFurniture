@@ -1,2 +1,2 @@
 # templateFurniture
-link host: https://noithattsix.000webhostapp.com/
+link host: http://freetsix.22web.org/
